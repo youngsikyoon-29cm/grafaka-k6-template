@@ -11,6 +11,9 @@ brew install k6
 - 실행하기
 ```bash
 k6 run test.js
+
+# grafana 시각화(influx DB사용) 연동 시
+k6 run --out influxdb=http://localhost:8086/myk6db test.js
 ```
 
 - 실행 결과 확인
